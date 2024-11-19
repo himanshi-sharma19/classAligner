@@ -1,0 +1,60 @@
+.container{
+  padding-top: 2px;
+  margin-top: 2px; /* Remove any top margin */
+  width: 100%;
+  min-height: 150px; /* Adjust if needed */
+  gap: 20px; /* Space between elements inside the container */
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0; /* Remove or reduce padding here */
+  min-height: 70vh; /* Adjust content height if needed */
+  gap: 20px; /* Space between sections */
+}
+/* Section Styles */
+.section {
+  flex: 1;
+  max-width: 500px; /* Controls section width */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: auto; /* Changed from 1200px to auto for flexible height */
+  min-height: 400px; /* Set a reasonable minimum height */
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+.section.teacher {
+  background-color: #f9d5b3;
+  color: #333;
+}
+
+.section.student {
+  background-color: #c8b9f2;
+  color: #333;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.section-image {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
